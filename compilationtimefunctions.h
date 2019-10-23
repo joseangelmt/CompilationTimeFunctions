@@ -81,13 +81,13 @@ constexpr struct tm GetCompilationTM()
 constexpr SYSTEMTIME GetCompilationSystemTime()
 {
 	return {
-		static_cast<WORD>(CompilationSecond()),
-		static_cast<WORD>(CompilationMinute()),
-		static_cast<WORD>(CompilationHour()),
-		static_cast<WORD>(CompilationDay()),
-		static_cast<WORD>(CompilationMonth()),
 		static_cast<WORD>(CompilationYear()),
+		static_cast<WORD>(CompilationMonth()),
 		0,
+		static_cast<WORD>(CompilationDay()),
+		static_cast<WORD>(CompilationHour()),
+		static_cast<WORD>(CompilationMinute()),
+		static_cast<WORD>(CompilationSecond()),
 		0};
 }
 #endif
