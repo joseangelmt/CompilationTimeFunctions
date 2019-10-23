@@ -1,3 +1,5 @@
+[![NuGet](https://img.shields.io/nuget/v/CompilationTimeFunctions?style=flat)](https://www.nuget.org/packages/CompilationTimeFunctions/)
+
 # CompilationTimeFunctions
 
 In C++ you can get the compilation time using the \_\_DATE\_\_ and \_\_TIME\_\_ macros, but that macros returns strings representing the date and time and not values we can use to compare.
