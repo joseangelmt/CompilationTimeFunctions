@@ -2,6 +2,8 @@
 
 constexpr int AsciiByteToInt(char value)
 {
+	if (value <= 0x30)
+		return 0;
 	return value - 0x30;
 }
 
