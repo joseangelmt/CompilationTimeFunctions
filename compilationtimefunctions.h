@@ -57,12 +57,12 @@ constexpr int CompilationHour()
 
 constexpr int CompilationMinute()
 {
-	return AsciiByteToInt(__TIME__[0]) * 10 + AsciiByteToInt(__TIME__[1]);
+	return AsciiByteToInt(__TIME__[3]) * 10 + AsciiByteToInt(__TIME__[4]);
 }
 
 constexpr int CompilationSecond()
 {
-	return AsciiByteToInt(__TIME__[0]) * 10 + AsciiByteToInt(__TIME__[1]);
+	return AsciiByteToInt(__TIME__[6]) * 10 + AsciiByteToInt(__TIME__[8]);
 }
 
 constexpr struct tm GetCompilationTM()
